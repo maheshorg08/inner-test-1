@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mahesh-gitlab-2
+  email: mahesh.gowripatnam@hcl.com
+  description: This is a sample component generated from the inner-sourcing template.
+  annotations:
+    github.com/project-slug: Abhay/mahesh-gitlab-2
+spec:
+  type: Service
+  lifecycle: Production
+  owner: Abhay
+  implementsApis:
+    - my-api
+  system: Production
+  tags: tag1
+  repository:
+    type: gitlab
+    url: https://gitlab.com/gitlab-examples/ops/gitops-demo/cluster-management
+    path: /
