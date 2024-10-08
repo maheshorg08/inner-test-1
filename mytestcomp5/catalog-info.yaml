@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mytestcomp5
+  description: This is a sample component generated from the inner-sourcing template.
+  annotations:
+    github.com/project-slug: Mahesh/mytestcomp5
+spec:
+  type: Service
+  lifecycle: production
+  owner: Mahesh
+  implementsApis:
+    - my-api
+  system: examples
+  repository:
+    type: git
+    url: https://github.com/maheshorg08/inner-test-1
+    path: /
