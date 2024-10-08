@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mahesh-test-22
+  email: mahesh.gowripatnam@hcl.com
+  description: This is a sample component generated from the inner-sourcing template.
+  annotations:
+    github.com/project-slug: Mahesh123/mahesh-test-22
+spec:
+  type: Service
+  lifecycle: Production
+  owner: Mahesh123
+  implementsApis:
+    - my-api
+  system: Production
+  tags: tag1
+  repository:
+    type: github
+    url: https://github.com/maheshorg08/inner-test-1
+    path: /
