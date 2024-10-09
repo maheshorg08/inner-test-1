@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mahesh-git-4
+  email: mahesh.g@gmail.com
+  links:
+    - url: https://backstage.io/
+      title: My Dashboard
+  tags:
+    - tag1
+  description: This is a sample component generated from the inner-sourcing template.
+  annotations:
+    backstage.io/source-location: url:https://github.com/abhaymorg/pr15
+spec:
+  type: Service
+  lifecycle: Production
+  owner: Mahesh
+  implementsApis:
+    - my-api
+  system: Production
+  repository:
+    type: github
+    url: https://github.com/abhaymorg/pr15
+    path: /
