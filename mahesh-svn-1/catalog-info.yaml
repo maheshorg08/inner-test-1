@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mahesh-svn-1
+  email: mahesh.g@gmail.com
+  description: This is a sample component generated from the inner-sourcing template.
+  annotations:
+    backstage.io/source-location: url:https://svn.eionet.europa.eu/repositories/DotNet
+spec:
+  type: Website
+  lifecycle: Production
+  owner: Mahesh
+  implementsApis:
+    - my-api
+  system: Production
+  tags: tag1
+  repository:
+    type: github
+    url: https://svn.eionet.europa.eu/repositories/DotNet
+    path: /
