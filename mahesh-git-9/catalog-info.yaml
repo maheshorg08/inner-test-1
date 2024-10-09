@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mahesh-git-9
+  email: mahesh.gowripatnam@hcl.com
+  links:
+    - url: https://dashboard.example.com
+      title: My Dashboard
+      icon: dashboard
+  tags:
+    - tag1
+  annotations:
+    backstage.io/source-location: url:https://github.com/abhaymorg/pr15
+spec:
+  type: Service
+  lifecycle: Production
+  owner: Mahesh
+  implementsApis:
+    - my-api
+  system: Production
+  repository:
+    type: github
+    url: https://github.com/abhaymorg/pr15
+    path: /
