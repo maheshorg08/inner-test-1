@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: innersourcing-connectorframework_2.1
+  email: mahesh.gowripatnam@hcl.software
+  links:
+    - url: https://github01.hclpnp.com/SPARC-Development-Lab/innersourcing-connectorframework_2.0/blob/Developer/README.md
+      title: Dashboard
+      icon: dashboard
+  tags:
+    - python
+    - ApacheNafi
+    - Jolttransformation
+    - JavaScript
+  description: This project is a platform which can be used as a service to send
+    data from one source to other using apache nifi capabilities.
+  annotations:
+    backstage.io/source-location: url:https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-connectorframework_2.0
+spec:
+  type: Service
+  lifecycle: Production
+  owner: innersourcing-connectorframework_2.0
+  implementsApis:
+    - my-api
+  system: production
+  repository:
+    type: github
+    url: https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-connectorframework_2.0
+    path: /
