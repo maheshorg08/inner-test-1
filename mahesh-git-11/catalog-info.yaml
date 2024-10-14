@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mahesh-git-11
+  email: mahesh.gowripatnam@hcl.com
+  links:
+    - url: http://localhost:3000/catalog/default/component/mahesh-git-11
+      title: Dashboard
+      icon: dashboard
+  tags:
+    - tag1
+  annotations:
+    backstage.io/source-location: url:https://github.com/maheshorg08/inner-test-1
+spec:
+  type: Service
+  lifecycle: Production
+  owner: Mahesh123
+  implementsApis:
+    - my-api
+  system: Production
+  repository:
+    type: github
+    url: https://github.com/maheshorg08/inner-test-1
+    path: /
