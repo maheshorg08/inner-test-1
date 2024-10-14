@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: innersourcing-connectorframework_2.0
+  email: mahesh.gowripatnam@hcl.com
+  links:
+    - url: https://github01.hclpnp.com/SPARC-Development-Lab/innersourcing-connectorframework_2.0/blob/Developer/README.md
+      title: Dashboard
+      icon: dashboard
+  tags:
+    - tag1
+  annotations:
+    backstage.io/source-location: url:https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-connectorframework_2.0
+spec:
+  type: Service
+  lifecycle: Production
+  owner: group:default/innersourcing-connectorframework_2.0
+  implementsApis:
+    - my-api
+  system: system:default/production
+  repository:
+    type: github
+    url: https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-connectorframework_2.0
+    path: /
