@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mytestcomp1012
+  email: mahesh.gowripatnam@hcl.com
+  links:
+    - url: https://github01.hclpnp.com/SPARC-Development-Lab/innersourcing-nlu/blob/Developer/README.md
+      title: Dashboard
+      icon: dashboard
+  tags:
+    - python
+    - apachenafi
+    - jolttransformation
+    - javascript
+  contributionWanted: asda, ada
+  description: This is test
+  annotations:
+    backstage.io/source-location: url:https://gitlab.com/gitlab-examples/ops/gitops-demo/cluster-management
+spec:
+  type: Service
+  lifecycle: Production
+  owner: Mahesh
+  implementsApis:
+    - my-api
+  system: production
+  repository:
+    type: gitlab
+    url: https://gitlab.com/gitlab-examples/ops/gitops-demo/cluster-management
+    path: /
