@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Test8test1234
+  email: mahesh.gowripatnam@hcl.com
+  links:
+    - url: http://localhost:3000/catalog/default/component/Test8test1234
+      title: Dashboard
+      icon: dashboard
+  tags:
+    - java
+    - nodejs
+  contributionWanted: Bugfixes, Features, Enhancement, Infrastructure
+  description: Open Source Identity and Access Management -Keycloak\r\nSolution to
+    provide the customisation and installation of Keycloak in one single click.
+  annotations:
+    backstage.io/source-location: url:https://github01.hclpnp.com/SPARC-Development-Lab/innersourcing-domino-rest-adminclient
+    contribution-wanted: Bugfixes, Features, Enhancement, Infrastructure
+spec:
+  type: Service
+  lifecycle: Production
+  owner: Maheshas
+  implementsApis:
+    - my-api
+  system: production
+  repository:
+    type: github
+    url: https://github01.hclpnp.com/SPARC-Development-Lab/innersourcing-domino-rest-adminclient
+    path: /
