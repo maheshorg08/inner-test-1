@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: innersourcing-isd_gfmonitoringtool
+  email: mahesh.gowripatnam@hcl.com
+  links:
+    - url: https://github01.hclpnp.com/SPARC-Development-Lab/innersourcing-isd_gfmonitoringtool/blob/master/README.md
+      title: Dashboard
+      icon: dashboard
+  tags:
+    - kubernetes
+    - kubectl
+  description: Continuous Monitoring will help monitor the performance of the
+    project. One will easily be able to observe and detect compliance issues,
+    over-consumption of any resources. The real-time analysis of data inflow and
+    outflow can be observed.\r\nThrough this
+  annotations:
+    backstage.io/source-location: url:https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-isd_gfmonitoringtool
+spec:
+  type: Service
+  lifecycle: Production
+  owner: innersourcing-isd_gfmonitoringtool
+  implementsApis:
+    - my-api
+  system: production
+  repository:
+    type: github
+    url: https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-isd_gfmonitoringtool
+    path: /
