@@ -1,0 +1,34 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: innersourcing-domino-rest-adminclient
+  email: mahesh.gowripatnam@hcl.com
+  links:
+    - url: http://localhost:3000/catalog/default/component/innersourcing-domino-rest-adminclient
+      title: Dashboard
+      icon: dashboard
+  tags:
+    - javascript
+    - typescript
+    - reactjs
+    - vite
+  description: AdminUI managing the Domino REST API configuration, showcase of
+    HTTP client app.
+  annotations:
+    backstage.io/source-location: url:https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-domino-rest-adminclient
+    contribution-wanted:
+      - bugfixes
+      - features
+      - enhancement
+      - infrastructure
+spec:
+  type: Service
+  lifecycle: Production
+  owner: innersourcing-domino-rest-adminclient
+  implementsApis:
+    - my-api
+  system: production
+  repository:
+    type: github
+    url: https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-domino-rest-adminclient
+    path: /
