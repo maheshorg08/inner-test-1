@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: innersourcing-domino-keep-plus
+  email: mahesh.gowripatnam@hcl.com
+  links:
+    - url: http://localhost:3000/catalog/default/component/innersourcing-domino-keep-plus
+      title: Dashboard
+      icon: dashboard
+  tags:
+    - java
+    - apache-poi
+    - http
+  description: Fluent interaction between applications RESTs on (pun intended)
+    good APIs. Knowing them makes integration work easy.
+  annotations:
+    backstage.io/source-location: url:https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-domino-keep-plus
+    contribution-wanted: "true"
+spec:
+  type: Service
+  lifecycle: Production
+  owner: innersourcing-domino-keep-plus
+  implementsApis:
+    - my-api
+  system: production
+  repository:
+    type: github
+    url: https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-domino-keep-plus
+    path: /
