@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: innersourcing-keycloak_oneclick_solution
+  email: mahesh.gowripatnam@hcl.software
+  links:
+    - url: https://github01.hclpnp.com/SPARC-Development-Lab/innersourcing-keycloak_oneclick_solution/blob/master/README.md
+      title: Dashboard
+      icon: dashboard
+  tags:
+    - linux
+    - shell-scripting
+    - html
+    - nodejs
+    - javascript
+  description: Open Source Identity and Access Management -Keycloak\r\nSolution to
+    provide the customisation and installation of Keycloak in one single click.
+  annotations:
+    backstage.io/source-location: url:https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-keycloak_oneclick_solution
+spec:
+  type: Service
+  lifecycle: Production
+  owner: innersourcing-keycloak_oneclick_solution
+  implementsApis:
+    - my-api
+  system: production
+  repository:
+    type: github
+    url: https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-keycloak_oneclick_solution
+    path: /
