@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: innersourcing-nlu
+  email: mahesh.gowripatnam@hcl.software
+  links:
+    - url: https://github01.hclpnp.com/SPARC-Development-Lab/innersourcing-nlu/blob/Developer/README.md
+      title: Dashboard
+      icon: dashboard
+  tags:
+    - python
+    - apache-nifi
+    - nifi-registry
+  description: NLU is a bot service that will be reponed to users' queries related
+    to HCL internal policy and procedure.It has 2 services and they are
+    connected via a wrapper service called middleware,Transactional and QnA
+  annotations:
+    backstage.io/source-location: url:https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-nlu
+spec:
+  type: Service
+  lifecycle: Production
+  owner: innersourcing-nlu
+  implementsApis:
+    - my-api
+  system: production
+  repository:
+    type: github
+    url: https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-nlu
+    path: /
