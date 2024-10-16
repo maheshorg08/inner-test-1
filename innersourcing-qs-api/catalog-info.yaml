@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: innersourcing-qs-api
+  email: mahesh.gowripatnam@hcl.com
+  links:
+    - url: http://localhost:3000/catalog/default/component/innersourcing-qs-api
+      title: Dashboard
+      icon: dashboard
+  tags:
+    - javascript
+    - kubernetes
+    - helm
+  contributionWanted: Bugfixes, Features
+  description: Provide a platform for quickly deploy servers for development and testing.
+  annotations:
+    backstage.io/source-location: url:https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-qs-api
+spec:
+  type: Service
+  lifecycle: Production
+  owner: SPARC-Development-Lab
+  implementsApis:
+    - my-api
+  system: production
+  repository:
+    type: github01
+    url: https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-qs-api
+    path: /
