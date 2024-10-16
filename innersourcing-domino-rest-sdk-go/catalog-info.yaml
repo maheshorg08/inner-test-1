@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: innersourcing-domino-rest-sdk-go
+  email: mahesh.gowripatnam@hcl.software
+  links:
+    - url: http://localhost:3000/catalog/default/component/innersourcing-domino-rest-sdk-go
+      title: Dashboard
+      icon: dashboard
+  tags:
+    - golang
+    - go
+    - http
+  contributionWanted: Bugfixes, Features, Enhancement, Infrastructure
+  description: GoLang wrapper around the Domino REST API.
+  annotations:
+    backstage.io/source-location: url:https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-domino-rest-sdk-go
+spec:
+  type: WebApi
+  lifecycle: Production
+  owner: SPARC-Development-Lab
+  implementsApis:
+    - my-api
+  system: production
+  repository:
+    type: github01
+    url: https://github01.hclpnp.com/api/v3/repos/SPARC-Development-Lab/innersourcing-domino-rest-sdk-go
+    path: /
